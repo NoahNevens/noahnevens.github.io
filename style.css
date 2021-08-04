@@ -1,0 +1,233 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: black;
+}
+
+.welcome {
+    font-size: 2vw;
+    top: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    left: 2vw;
+}
+
+.pageLink {
+    font-size: 1.5vw;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    height: 3vw;
+    color: white;
+    line-height: 3vw;
+}
+
+.pageLink:hover {
+    cursor:pointer;
+    background-color: white;
+    color: black;
+}
+
+.prompt {
+    position: absolute;
+    color: violet;
+    font-size: 1.5vw;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#numberField {
+    position: absolute;
+    font-size: 1.5vw;
+    font-family: 'Source Code Pro', monospace;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+}
+
+.choosePage {
+    background-color: black;
+}
+
+.description {
+    position: absolute;
+    height: 25vw;
+    width: 24vw;
+    border: 0.1vw solid gold;
+    left: 2vw;
+    top: 15vw;
+    color: goldenrod;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+
+.query {
+    color: white;
+}
+
+.stats {
+    position: absolute;
+    height: 12vw;
+    width: 52vw;
+    border: 0.1vw solid rgb(7, 187, 7);
+    left: 2vw;
+    top: 2vw;
+    color: rgb(7, 187, 7);
+}
+
+.resume {
+    position: absolute;
+    height: 40vw;
+    width: 36.6vw;
+    border: 0.1vw solid red;
+    left: 55vw;
+    top: 2vw;
+    color: rgb(7, 187, 7);
+}
+
+#resumePic {
+    opacity: 0;
+    position: absolute;
+    left: 0.25vw;
+    top: 0.25vw;
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+.bar {
+    position: absolute;
+    height: 1.2vw;
+    border: 2px solid green;
+    width: 8vw;
+}
+
+.stat {
+    font-size: 1vw;
+    position: absolute;
+    color: green;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#profilePic {
+    position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 11vw;
+    -webkit-filter: grayscale(1);
+    height: 11vw;
+}
+
+.xc {
+    position: absolute;
+    width: 23vw;
+    top: 15vw;
+    height: 25vw;
+    left: 29vw;
+    border: 0.1vw violet solid;
+    color: pink;
+    padding: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2vw;
+}
+
+#hoverMe {
+    position: absolute;
+    left: 7vw;
+    top: 16vw;
+    color: red;
+    font-size: 2vw;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#hoverMe:hover {
+    opacity: 0;
+}
+
+#resumePic:hover {
+    opacity: 1.0;
+}
+
+header {
+    font-size: 3.5vw;
+    color: rgb(207, 77, 77);
+    left: 26vw;
+    top: 1vw;
+    position: absolute;
+}
+
+#githubInfo {
+    font-size: 1.5vw;
+    color: rgb(167, 170, 7);
+    left: 37vw;
+    top: 6vw;
+    position: absolute;
+    font-style: italic;
+}
+
+.projectBox {
+    position: absolute;
+    background-color: white;
+    width: 57.5vw;
+    height: 12vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2vw;
+    color: black;
+    padding: 1.5vw;
+    font-size: 1vw;
+}
+
+#sluggers {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./sluggers.PNG");
+}
+
+#eleven {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Eleven.PNG");
+}
+
+.contact {
+    font-style: italic;
+    position: absolute;
+    font-size: 2vw;
+}
+
+.heading {
+    font-size: 3.5vw;
+    color: white;
+    left: 44.5vw;
+    top: 1vw;
+    position: absolute;
+}
+
+.distance {
+    color: white;
+}
+
+.time {
+    color: rgb(221, 75, 105);
+}
+
+#runningTimes {
+    position: absolute;
+    left: 3vw;
+    top: 4vw;
+}
+
+.codeLink {
+    position: absolute;
+    right: 10vw;
+    font-size: 1.2vw;
+    top: 12vw;
+    color: black;
+}
+
+.websiteLink {
+    position: absolute;
+    right: 2vw;
+    font-size: 1.2vw;
+    top: 12vw;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+}
