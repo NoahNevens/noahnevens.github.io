@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>noah.nevens</title>
+    </head>
+    <body>
+        <div class="pages" id="mainPage">
+            <div class="welcome" style="color: rgb(8, 161, 8)"><span style="color: white">Mounting</span> /home/noahnevens...<br>
+                <span id="timestamp" style="color: yellow">Welcome to noah nevens version 3-2021-beta</span><br><br>
+                <span style="color: rgb(238, 74, 74)">Where would you like to begin?</span></div>
+            <div class="pageLink" id="profile" style="top: 13vw; left: 2vw; width: 32vw;">1: learn more about noah</div>
+            <div class="pageLink" id="project" style="top: 17vw; left: 2vw; width: 32vw;">2: peruse noah's projects</div>
+            <div class="pageLink" id="contact" style="top: 21vw; left: 2vw; width: 32vw;">3: make contact with noah</div>
+            <div class="pageLink" id="main" style="top: 25vw; left: 2vw; width: 32vw; ">4: stay here where it's safe</div>
+            <div class="prompt" id="page1Prompt" style="top: 37vw; left: 2vw;">noahnevens:-/ user$</div>
+            <form class="choosePage" style="position: absolute; top: 37vw; left: 20vw;">
+                <input type="text" name="enterNumber" id="numberField">
+            </form> 
+        </div>
+        <div class="pages" id="profilePage" style="display: none;">
+            <div class="stats">
+                <span class="stat" id="healthInfo" style="top: 1vw; left: 12vw;">Health: 7</span>
+                <span class="stat" id="strengthInfo" style="top: 1vw; left: 22vw;">Strength: 2</span>
+                <span class="stat" id="speedInfo" style="top: 1vw; left: 32vw;">Speed: 9</span>
+                <span class="stat" id="staminaInfo" style="top: 1vw; left: 42vw;">Stamina: 10</span>
+                <span class="stat" id="intellectInfo" style="top: 6vw; left: 12vw;">Intellect: 5</span>
+                <span class="stat" id="agilityInfo" style="top: 6vw; left: 22vw;">Agility: 3</span>
+                <span class="stat" id="charismaInfo" style="top: 6vw; left: 32vw;">Charisma: 4</span>
+                <span class="stat" id="dexterityInfo" style="top: 6vw; left: 42vw;">Dexterity: 7</span>
+                <div class="bar" id="health" style="top: 2.5vw; left: 12vw; background: linear-gradient(to right, green 70%, black 30%);"></div>
+                <div class="bar" id="strength" style="top: 2.5vw; left: 22vw; background: linear-gradient(to left, black 80%, green 20%);"></div>
+                <div class="bar" id="speed" style="top: 2.5vw; left: 32vw; background: linear-gradient(to right, green 90%, black 10%);"></div>
+                <div class="bar" id="stamina" style="top: 2.5vw; left: 42vw; background: linear-gradient(to right, green 100%, black 0%);"></div>
+                <div class="bar" id="intellect" style="top: 7.5vw; left: 12vw; background: linear-gradient(to right, green 50%, black 50%);"></div>
+                <div class="bar" id="agility" style="top: 7.5vw; left: 22vw; background: linear-gradient(to left, black 70%, green 30%);"></div>
+                <div class="bar" id="charisma" style="top: 7.5vw; left: 32vw; background: linear-gradient(to left, black 60%, green 40%);"></div>
+                <div class="bar" id="dexterity" style="top: 7.5vw; left: 42vw; background: linear-gradient(to right, green 70%, black 30%);"></div>
+                <img id="profilePic" src="./noah.png" alt="picture of nosh">
+            </div>
+            <div class="description"><span class="query">Status:</span> alive<br><span class="query">Age:</span> 20<br><span class="query">School:</span> harvey mudd college<br><span class="query">Year:</span> third<br><span class="query">Major:</span> computer science<br><br>
+                <span class="query">Interests:<br></span>> coding / learning<br>> running (distance)<br>> games / competition<br>> mario<br>> star wars<br>> trivia<br>> arguing<br>> seeing my friends</div>
+            <div class="resume">
+                <span id="hoverMe">Hover to see resume</span>
+                <img id="resumePic" src="./resume.PNG" alt="resume">
+            </div>
+            <div class="xc">Running Times {<br><br><div id="runningTimes"><span class="distance">800 - </span><span class="time">1:57<br><br></span><span class="distance">1600 - </span><span class="time">4:20<br><br></span>
+                <span class="distance">3 mi - </span><span class="time">14:42<br><br></span><span class="distance">5 mi - </span><span class="time">27:12<br></span></div><br><br><br><br><br><br><br><br>}</div>
+            <div class="pageLink" id="profile" style="top: 43.5vw; left: 7vw; width: 22vw;">1: stay here</div>
+            <div class="pageLink" id="project" style="top: 43.5vw; left: 30vw; width: 22vw;">2: noah's projects</div>
+            <div class="pageLink" id="contact" style="top: 43.5vw; left: 53vw; width: 22vw;">3: contact noah</div>
+            <div class="pageLink" id="main" style="top: 43.5vw; left: 76vw; width: 21vw;">4: go home</div>
+        </div>
+        <div class="pages" id="projectPage" style="display: none;">
+            <header>Noah's Best Projects</header>
+            <a id="githubInfo" href="https://github.com/NoahNevens" target="blank">see projects on github</a>
+            <div class="projectBox" id="sluggers" style="left: 7.5vw; top: 13vw;"><span style="font-size: 1.5vw;"><em>Mario Super Sluggers</em></span><br>
+                <p>One day noah and his friends congregated for a Mario Super Sluggers tournament. Before they began playing, each player took turns drafting the best team possible.
+                    However, everyone had trouble remembering which characters had been taken and which were available. Over the course of the next week, noah created a solution using
+                    HTML, CSS, and JavaScript whereby each person could keep track of their team and their team's stats.
+                </p>
+                <a class="codeLink" href="https://github.com/NoahNevens/Mario-Super-Sluggers "target="blank">Code</a>
+                <a class="websiteLink" href="https://noahnevens.github.io/Mario-Super-Sluggers/"target="blank">Website</a></div>
+            <div class="projectBox" id="eleven" style="left: 7.5vw; top: 30vw;"><span style="font-size: 1.5vw;"><em>Eleven</em></span><br>
+                <p>Eleven is a simple logic game whereby a player uses a control panel, a collection of resources and their own wits to evade 
+                    and combat enemies in an arena. The goal is to grab enough trophies in the arena to advance from level to level without losing
+                    all of your health. This project uses HTML, CSS, JavaScript.
+                </p>
+                <a class="codeLink" href="https://github.com/NoahNevens/Eleven" target="blank">Code</a>
+                <a class="websiteLink" href="https://noahnevens.github.io/Eleven/"target="blank">Website</a></div>
+            <div class="pageLink" id="profile" style="top: 10vw; left: 75vw; width: 22vw;">1: noah's profile</div>
+            <div class="pageLink" id="project" style="top: 20vw; left: 75vw; width: 22vw;">2: stay here</div>
+            <div class="pageLink" id="contact" style="top: 30vw; left: 75vw; width: 22vw;">3: contact noah</div>
+            <div class="pageLink" id="main" style="top: 40vw; left: 75vw; width: 21vw;">4: go home</div>
+        </div>
+        <div class="pages" id="contactPage" style="display: none;">
+            <div class="heading">Contact</div>
+            <a class="contact" id="linkedInContact" href="https://www.linkedin.com/in/noah-nevens-8167b31a4/" target="blank" style="color: lightblue; left: 47vw; top: 10vw;">linkedin</a>
+            <a class="contact" id="emailContact" href="mailto:nnevens@g.hmc.edu" target="blank" style="color: goldenrod; left: 48.5vw; top: 16.5vw;">email</a>
+            <a class="contact" id="githubContact" href="https://github.com/NoahNevens" target="blank" style="color: violet; left: 48vw; top: 23vw;">github</a>
+            <a class="contact" id="athletic" href="https://www.athletic.net/CrossCountry/Athlete.aspx?AID=8694872" target="blank" style="color: red; left: 44.5vw; top: 29.5vw;">athletic.net</a>
+            <div class="pageLink" id="profile" style="top: 38.5vw; left: 7vw; width: 22vw;">1: noah's profile</div>
+            <div class="pageLink" id="project" style="top: 38.5vw; left: 30vw; width: 22vw;">2: noah's projects</div>
+            <div class="pageLink" id="contact" style="top: 38.5vw; left: 53vw; width: 22vw;">3: stay here</div>
+            <div class="pageLink" id="main" style="top: 38.5vw; left: 76vw; width: 21vw;">4: go home</div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>
